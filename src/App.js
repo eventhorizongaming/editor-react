@@ -12,27 +12,27 @@ function App() {
     <Sidebar>
 
       <SidebarTab icon={<VscFiles />}>
-        <h1>Files</h1>
+        <h1 className="col-gray-90">Files</h1>
       </SidebarTab>
 
       <SidebarTab icon={<VscSearch />}>
-        <h1>Search</h1>
+        <h1 className="col-gray-90">Search</h1>
       </SidebarTab>
 
       <SidebarTab icon={<VscSourceControl />}>
-        <h1>Source control</h1>
+        <h1 className="col-gray-90">Source control</h1>
       </SidebarTab>
 
       <SidebarTab icon={<VscDebugAlt />}>
-        <h1>Debugger</h1>
+        <h1 className="col-gray-90">Debugger</h1>
       </SidebarTab>
 
       <SidebarTab icon={<VscExtensions />}>
-        <h1>Extensions</h1>
+        <h1 className="col-gray-90">Extensions</h1>
       </SidebarTab>
 
       <SidebarTab icon={<VscGithubInverted />}>
-        <h1>GitHub</h1>
+        <h1 className="col-gray-90">GitHub</h1>
       </SidebarTab>
 
     </Sidebar>
