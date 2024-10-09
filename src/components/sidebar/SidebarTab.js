@@ -1,6 +1,6 @@
 function SidebarTab({ children }) {
   return (
-    <div className="sidebar-content col-gray-90">
+    <div className="col-gray-90">
       {children}
     </div>
   );
