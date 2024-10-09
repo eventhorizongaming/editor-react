@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './styles.css';
 
-function Sidebar({ icons, children }) {
+function Sidebar({ children }) {
   const [currentTab, setCurrentTab] = useState(0);
 
   const sidebarIcons = children.map((tab, index) =>
