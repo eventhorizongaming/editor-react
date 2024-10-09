@@ -1,0 +1,28 @@
+.sidebar {
+  display: flex;
+}
+
+.sidebar-menu {
+  width: 48px;
+  height: 960px;
+  border: 1px solid var(--gray-20);
+}
+
+.sidebar-icon {
+  color: var(--gray-60);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  font-size: 24px;
+  transition-duration: 100ms;
+}
+
+.sidebar-icon:hover, .sidebar-icon.selected {
+  color: var(--gray-90);
+}
+
+.sidebar-icon.selected {
+  box-shadow: 2px 0 0 #2d78d4 inset;
+}
