@@ -5,7 +5,7 @@ function Sidebar({ children }) {
   const [currentTab, setCurrentTab] = useState(0);
 
   const sidebarIcons = children.map((tab, index) =>
-    <Tooltip title={tab.props.title} position="right">
+    <Tooltip key={index} title={tab.props.title} position="right">
       <div
         className={"sidebar-icon" + (index === currentTab ? " selected" : "")}
         onClick={() => {setCurrentTab(index)}}
