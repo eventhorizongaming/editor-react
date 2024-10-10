@@ -1,6 +1,12 @@
 body {
   margin: 0px;
   background: var(--gray-10);
+  height: 100vh;
+  overflow: hidden;
+}
+
+#root {
+  height: 100%;
 }
 
 :root {
