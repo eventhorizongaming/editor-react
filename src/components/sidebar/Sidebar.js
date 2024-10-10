@@ -16,10 +16,10 @@ function Sidebar({ children }) {
 
   return (
     <div className="sidebar">
-      <div className="sidebar-menu bg-gray-10 col-gray-90">
+      <div className="sidebar-menu bg-gray-10">
         {sidebarIcons}
       </div>
-      <div className="sidebar-content col-gray-90">
+      <div className="sidebar-content bg-gray-10" tabindex="1">
         {children[currentTab]}
       </div>
     </div>

@@ -26,3 +26,12 @@
 .sidebar-icon.selected {
   box-shadow: 2px 0 0 #2d78d4 inset;
 }
+
+.sidebar-content {
+  border: 1px solid var(--gray-20);
+}
+
+.sidebar-content:focus {
+  outline: #2d78d4 solid 1px;
+  outline-offset: -2px;
+}
