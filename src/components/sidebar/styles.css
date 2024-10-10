@@ -29,6 +29,7 @@
 
 .sidebar-content {
   border: 1px solid var(--gray-20);
+  margin-left: -1px;
 }
 
 .sidebar-content:focus {
