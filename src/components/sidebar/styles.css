@@ -52,5 +52,5 @@
 
 .sidebar-content .tab-content:focus {
   outline: #2d78d4 solid 1px;
-  outline-offset: -2px;
+  outline-offset: -1px;
 }
