@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Tooltip } from '../floaters';
-import './styles.css';
 
 function Sidebar({ children }) {
   const [currentTab, setCurrentTab] = useState(0);
