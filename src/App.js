@@ -11,28 +11,28 @@ function App() {
   return (
     <Sidebar>
 
-      <SidebarTab icon={<VscFiles />}>
-        <h1 className="col-gray-90">Files</h1>
+      <SidebarTab icon={<VscFiles />} title="Explorer">
+        <h1 className="col-gray-90">Files dummy content</h1>
       </SidebarTab>
 
-      <SidebarTab icon={<VscSearch />}>
-        <h1 className="col-gray-90">Search</h1>
+      <SidebarTab icon={<VscSearch />} title="Search">
+        <h1 className="col-gray-90">Search dummy content</h1>
       </SidebarTab>
 
-      <SidebarTab icon={<VscSourceControl />}>
-        <h1 className="col-gray-90">Source control</h1>
+      <SidebarTab icon={<VscSourceControl />} title="Source control">
+        <h1 className="col-gray-90">Source control dummy content</h1>
       </SidebarTab>
 
-      <SidebarTab icon={<VscDebugAlt />}>
-        <h1 className="col-gray-90">Debugger</h1>
+      <SidebarTab icon={<VscDebugAlt />} title="Run and Debug">
+        <h1 className="col-gray-90">Debugger dummy content</h1>
       </SidebarTab>
 
-      <SidebarTab icon={<VscExtensions />}>
-        <h1 className="col-gray-90">Extensions</h1>
+      <SidebarTab icon={<VscExtensions />} title="Extensions">
+        <h1 className="col-gray-90">Extensions dummy content</h1>
       </SidebarTab>
 
-      <SidebarTab icon={<VscGithubInverted />}>
-        <h1 className="col-gray-90">GitHub</h1>
+      <SidebarTab icon={<VscGithubInverted />} title="GitHub">
+        <h1 className="col-gray-90">GitHub dummy content</h1>
       </SidebarTab>
 
     </Sidebar>

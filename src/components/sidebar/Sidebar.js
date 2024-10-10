@@ -19,7 +19,7 @@ function Sidebar({ children }) {
       <div className="sidebar-menu bg-gray-10">
         {sidebarIcons}
       </div>
-      <div className="sidebar-content bg-gray-10" tabindex="1">
+      <div className="sidebar-content bg-gray-10">
         {children[currentTab]}
       </div>
     </div>

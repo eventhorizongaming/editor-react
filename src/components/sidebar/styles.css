@@ -1,10 +1,11 @@
 .sidebar {
   display: flex;
+  height: 100%;
 }
 
 .sidebar-menu {
   width: 48px;
-  height: 960px;
+  height: 100%;
   border: 1px solid var(--gray-20);
 }
 
@@ -28,11 +29,28 @@
 }
 
 .sidebar-content {
+  display: flex;
+  flex-direction: column;
   border: 1px solid var(--gray-20);
   margin-left: -1px;
 }
 
-.sidebar-content:focus {
+.sidebar-content .tab-heading {
+  padding-left: 20px;
+}
+
+.sidebar-content .tab-title {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 400;
+  user-select: none;
+}
+
+.sidebar-content .tab-content {
+  height: 100%;
+}
+
+.sidebar-content .tab-content:focus {
   outline: #2d78d4 solid 1px;
   outline-offset: -2px;
 }
