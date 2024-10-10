@@ -9,33 +9,35 @@ import { VscGithubInverted } from "react-icons/vsc";
 
 function App() {
   return (
-    <Sidebar>
+    <>
+      <Sidebar>
 
-      <SidebarTab icon={<VscFiles />} title="Explorer">
-        <h1 className="col-gray-90">Files dummy content</h1>
-      </SidebarTab>
+        <SidebarTab icon={<VscFiles />} title="Explorer">
+          <h1 className="col-gray-90">Files dummy content</h1>
+        </SidebarTab>
 
-      <SidebarTab icon={<VscSearch />} title="Search">
-        <h1 className="col-gray-90">Search dummy content</h1>
-      </SidebarTab>
+        <SidebarTab icon={<VscSearch />} title="Search">
+          <h1 className="col-gray-90">Search dummy content</h1>
+        </SidebarTab>
 
-      <SidebarTab icon={<VscSourceControl />} title="Source control">
-        <h1 className="col-gray-90">Source control dummy content</h1>
-      </SidebarTab>
+        <SidebarTab icon={<VscSourceControl />} title="Source control">
+          <h1 className="col-gray-90">Source control dummy content</h1>
+        </SidebarTab>
 
-      <SidebarTab icon={<VscDebugAlt />} title="Run and Debug">
-        <h1 className="col-gray-90">Debugger dummy content</h1>
-      </SidebarTab>
+        <SidebarTab icon={<VscDebugAlt />} title="Run and Debug">
+          <h1 className="col-gray-90">Debugger dummy content</h1>
+        </SidebarTab>
 
-      <SidebarTab icon={<VscExtensions />} title="Extensions">
-        <h1 className="col-gray-90">Extensions dummy content</h1>
-      </SidebarTab>
+        <SidebarTab icon={<VscExtensions />} title="Extensions">
+          <h1 className="col-gray-90">Extensions dummy content</h1>
+        </SidebarTab>
 
-      <SidebarTab icon={<VscGithubInverted />} title="GitHub">
-        <h1 className="col-gray-90">GitHub dummy content</h1>
-      </SidebarTab>
+        <SidebarTab icon={<VscGithubInverted />} title="GitHub">
+          <h1 className="col-gray-90">GitHub dummy content</h1>
+        </SidebarTab>
 
-    </Sidebar>
+      </Sidebar>
+    </>
   );
 }
 
