@@ -1,17 +1,20 @@
 import { useState } from 'react';
+import { Tooltip } from '../floaters';
 import './styles.css';
 
 function Sidebar({ children }) {
   const [currentTab, setCurrentTab] = useState(0);
 
   const sidebarIcons = children.map((tab, index) =>
-    <div
-      className={"sidebar-icon" + (index === currentTab ? " selected" : "")}
-      onClick={() => {setCurrentTab(index)}}
-      key={index}
-    >
-      {tab.props.icon}
-    </div>
+    <Tooltip title={tab.props.title} position="right">
+      <div
+        className={"sidebar-icon" + (index === currentTab ? " selected" : "")}
+        onClick={() => {setCurrentTab(index)}}
+        key={index}
+      >
+        {tab.props.icon}
+      </div>
+    </Tooltip>
   )
 
   return (
