@@ -1,4 +1,5 @@
 import { Sidebar, SidebarTab } from './components/sidebar/'
+import { AccountWidget } from './components/accountWidget';
 
 import { VscFiles } from "react-icons/vsc";
 import { VscSearch } from "react-icons/vsc";
@@ -8,6 +9,11 @@ import { VscExtensions } from "react-icons/vsc";
 import { VscGithubInverted } from "react-icons/vsc";
 
 function App() {
+  const signIn = async () => {
+    //await window.accountManager.signInWithGithub();
+    console.log(await window.accountManager.getGithubUser());
+  }
+
   return (
     <>
       <Sidebar>
@@ -33,7 +39,8 @@ function App() {
         </SidebarTab>
 
         <SidebarTab icon={<VscGithubInverted />} title="GitHub">
-          <h1 className="col-gray-90">GitHub dummy content</h1>
+          <h1 className="col-gray-90">GitHub Account</h1>
+          <AccountWidget />
         </SidebarTab>
 
       </Sidebar>
