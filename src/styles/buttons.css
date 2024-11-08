@@ -1,0 +1,19 @@
+button {
+    background-color: #0078d4;
+    border: none;
+    color: white;
+    border-radius: 2px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 13px;
+    padding: 4px;
+    width: 100%;
+    height: 28px;
+    border: 1px solid #ffffff12;
+}
+
+button:hover {
+    background-color: #026ec1;
+    cursor: pointer;
+}

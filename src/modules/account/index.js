@@ -1,4 +1,4 @@
 import { AccountManager } from "./src/AccountManager";
-import { GithubAccount } from "./src/GithubAccount";
+import { Account } from "./src/Account";
 
-export { AccountManager, GithubAccount }
+export { AccountManager, Account }

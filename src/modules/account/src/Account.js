@@ -1,6 +1,6 @@
 import { Octokit } from "octokit";
 
-class GithubAccount {
+class Account {
   accessToken;
   octokit;
   profile;
@@ -16,8 +16,6 @@ class GithubAccount {
     this.octokit = new Octokit({
       auth: this.accessToken
     });
-
-    this.loadProfile();
   }
 
   async loadProfile() {
@@ -28,9 +26,17 @@ class GithubAccount {
     this.profile = userRequest.data;
   }
 
+  async getProfile() {
+    if (!this.profile) {
+      await this.loadProfile();
+    }
+
+    return this.profile;
+  }
+
   async delete() {
     await this.firebaseAccount.delete();
   }
 }
 
-export { GithubAccount }
+export { Account }

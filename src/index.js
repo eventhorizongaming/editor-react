@@ -6,6 +6,7 @@ import { AccountManager } from './modules/account';
 // Styles
 import './styles/styles.css';
 import './styles/palettes/grayscale.css'
+import './styles/buttons.css'
 
 window.accountManager = new AccountManager();
 
